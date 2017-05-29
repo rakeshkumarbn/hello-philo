@@ -1,0 +1,26 @@
+.podcastListItem {
+  margin: auto;
+  position: relative;
+  height: 10em;
+  width: 10em;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.itemLink {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &:before {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    content: attr(data-title);
+    color: white;
+
+  }
+}
+
+.itemImg {
+  width: 100%;
+  height: 100%;
+}
